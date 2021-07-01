@@ -1,0 +1,245 @@
+.hover_effect {
+  background-color: #2d8e7f;
+  border: none;
+  color:white;
+  text-align: center;
+  font-size: 15;
+  padding: 5px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+
+.hover_effect span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.hover_effect span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.hover_effect:hover span {
+  padding-right: 15px;
+}
+
+.hover_effect:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.signature{
+  vertical-align: middle;
+  width: 100px;
+  height: 50px;
+  border-radius: 90%;
+}
+.dropbtn {
+  /*background-color: #04AA6D;*/
+  /*color: white;*/
+   padding: 10px;
+  margin: 10px;
+  font-size: 16px;
+  border: none;
+  background-color: #f8f9fa;
+  color: green;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: aqua;  border-radius: 15px;}
+
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+
+
+/* first page load then this */
+/* @charset "utf-8"; */
+
+@import url("https://fonts.googleapis.com/css?family=VT323&display=swap");
+
+
+.monitor {
+  margin: auto auto 0 auto;
+  padding: 2.5vmin 2.5vmin 2.5vmin 2.5vmin;
+  width: 85%;
+  height: 70%;
+  /* display: flex; */
+  flex-direction: column;
+  align-items: center;
+  background: #3f3933;
+  border-radius: 0.5rem;
+}
+
+.screen {
+  position: relative;
+  border: 30px solid transparent;
+  border-image-source: url(https://i.ibb.co/8jt98LP/crt-frame.png);
+  border-image-slice: 30 fill;
+  border-image-outset: 0;
+  overflow: hidden;
+}
+
+.crt {
+  background: #05321e;
+  background-image: radial-gradient(ellipse, #05321e 0%, #050505 90%);
+  animation: txt-shadow 1.6s infinite;
+  width: 80ch;
+  height: calc(80ch * 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+
+.terminal {
+  font-family: "VT323", monospace;
+  text-align: left;
+  position: relative;
+}
+
+.terminal .letsgo {
+  border-right: .4em solid #00fd55;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  position: relative;
+  color: #00fd55;
+  font-size: 3.5rem;
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
+  line-height: 70%;
+  letter-spacing: 5px;
+  padding-bottom: 8px;
+  box-sizing: border-box;
+  animation: typing 11s steps(17, end) infinite,
+    blink-cursor .8s step-end infinite,
+    glitch 10s linear infinite;
+}
+
+.terminal .letsgo::before,
+.terminal .letsgo::after {
+  content: attr(title);
+  position: absolute;
+  left: 0;
+}
+
+.terminal .letsgo::before {
+  animation: glitch-top 7s linear infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+
+.terminal .letsgo::after {
+  animation: glitch-botom 5s linear infinite;
+  clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+
+
+
+.letgo_button {
+  cursor: pointer;
+  position: relative;
+  left: 43%;
+  margin-top: 3%;
+  margin-bottom: 0.1%;
+  outline: 0; 
+  font-size: 0.9em;
+  font-weight: 600;
+  background: rgb(107, 255 ,187);
+  border: none;
+  padding: 0.7em 0.7em;
+  transition: all .3s ease-out; 
+  box-shadow: inset 0 -5px 0 0 rgba(0,0,0,.2),
+    1px 1px 0 0 #2b2927,
+    2px 2px 0 0 #2b2927,
+    3px 3px 0 0 #2b2927,
+    4px 4px 0 0 #2b2927,
+    5px 5px 0 0 #2b2927,
+    6px 6px 0 0 #2b2927;
+}
+
+.letgo_button:hover { color: #444; }
+
+.letgo_button:active {
+  color: #222;
+  margin-top: 3.1%;
+  margin-bottom: 0%;
+  box-shadow: inset 0 -3px 0 0 rgba(0,0,0,.2),
+    1px 1px 0 0 #2b2927,
+    2px 2px 0 0 #2b2927,
+    3px 3px 0 0 #2b2927;
+}
+
+
+
+
+
+@keyframes typing {
+  0%    { width: 0; }
+  20%   { width: 100%; content: attr(title); }
+  100%  { width: 100%; content: attr(title); }
+}
+
+@keyframes blink-cursor {
+  0%  { border-color: transparent }
+  50% { border-color: #00fd55; }
+}
+
+@keyframes glitch {
+  2%, 64% { transform: translate(2px,0) skew(0deg); }
+  4%, 60% { transform: translate(-2px,0) skew(0deg); }
+  62% { transform: translate(0,0) skew(5deg); }
+}
+
+@keyframes glitch-top {
+  2%, 64% { transform: translate(2px,-2px); }
+  4%, 60% { transform: translate(-2px,2px); }
+  62% { transform: translate(13px,-1px) skew(-13deg); }
+}
+
+@keyframes glitch-botom {
+  2%, 64% { transform: translate(-2px,0); }
+  4%, 60% { transform: translate(-2px,0); }
+  62% { transform: translate(-22px,5px) skew(21deg); }
+}
+
+
